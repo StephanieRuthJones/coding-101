@@ -45,3 +45,18 @@ form {
     margin-bottom: 20px;
 }
 
+/* to be completed after JavaScript */
+.comment-container {
+    align-content: center;
+    
+}
+
+#comments{
+    list-style-type: none;
+}
+
+.comment {
+    margin-left: 20%;
+    border-bottom: 3px solid darkblue;
+}
+
