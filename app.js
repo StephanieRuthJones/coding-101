@@ -2,5 +2,5 @@
 
 //2. Non-event delegation: Add a click event listener to each list item
 
-//3. Event delegation: add a click event listener to parent
+//3. Event delegation: Add a click event listener to list
 
