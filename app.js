@@ -1,4 +1,4 @@
-//write an event listener for the submit button that adds a comment to the comment list
+//write a submit event listener for the comment form that adds a comment to the comment list
 //What steps do we need to take:
 //1. Access the comment form by id #comment-form
 //2. access comment input by id #comment-input
@@ -11,6 +11,7 @@ const commentInput = document.querySelector("#comment-input")
 const comments = document.querySelector("#comments-list")
 
 commentForm.addEventListener("submit", event => {
+    //without event.preventDefault
     event.preventDefault()
     //look at the event object to see target - will use different aspects of the target
     console.log("event to look at event object and see the target", event)
