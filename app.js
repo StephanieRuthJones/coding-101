@@ -13,18 +13,20 @@ const comments = document.querySelector("#comments-list")
 commentForm.addEventListener("submit", event => {
     //without event.preventDefault
     event.preventDefault()
+
     //look at the event object to see target - will use different aspects of the target
+    //FORM DATA STRATEGY:
     // console.log("event to look at event object and see the target", event)
 
-    // const formData = new FormData(event.target)
-    // console.log('form data', formData)
-    // const commentText = formData.get('comment')
-    // console.log('commentText', commentText)
+    const formData = new FormData(commentForm)
+    console.log('form data', formData)
+    const commentText = formData.get('comment')
+    console.log('commentText', commentText)
 
     const comment = document.createElement("li")
     comment.className = "comment"
-    // comment.innerText = commentText
-    comment.innerText = "Comment: " + commentInput.value
+    comment.innerText = "Comment: " + commentText
+    // comment.innerText = "Comment: " + commentInput.value
 
     // optional delete button if we have time:
     const deleteButton = document.createElement("button")
